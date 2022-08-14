@@ -12,7 +12,6 @@ export class App extends Component {
   };
 
   onLeaveFeedback = ({ target: { name } }) => {
-    console.log(name);
     this.setState(prevState => ({ [name]: prevState[name] + 1 }));
   };
   countTotalFeedback = () => {
